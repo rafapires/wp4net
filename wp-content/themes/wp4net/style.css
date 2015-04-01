@@ -26,3 +26,34 @@ Version: 0.0.0
 form.navbar-form.navbar-left {
   margin: 11px;
 }
+
+.navbar-default {
+  background-color: #8A368C;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #8A368C;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #8A368C;
+}
+
+.btn-default {
+  color: #ffffff;
+  background-color: #006636;
+  border-color: #006636;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: #006636;
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: #006636;
+}
