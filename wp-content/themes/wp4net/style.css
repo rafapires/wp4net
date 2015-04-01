@@ -8,3 +8,21 @@ Version: 0.0.0
 
 */
 @import url('css/bootstrap.css'); 
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 22px 20px;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand img {
+  width: 84px;
+}
+
+form.navbar-form.navbar-left {
+  margin: 11px;
+}
