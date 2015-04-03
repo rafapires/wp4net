@@ -48,7 +48,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img src="<?php echo get_stylesheet_directory_uri().'/img/logo-100h.jpg'; ?>" class="img-responsive"></a>
+              <a class="navbar-brand" href="#"><img src="<?php echo get_stylesheet_directory_uri().'/img/logo-h-100h.jpg'; ?>" class="img-responsive"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
