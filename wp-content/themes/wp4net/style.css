@@ -9,6 +9,10 @@ Version: 0.0.0
 */
 @import url('css/bootstrap.css'); 
 
+body {
+	background-color: #2780E3;
+}
+
 /*MENU TOP*/
 
 .navbar {
@@ -23,4 +27,33 @@ Version: 0.0.0
 	height: 50px;
 	padding-right: 16px;
 	background-color: #fff;
+}
+
+/*FOOTER*/
+
+section#footer {
+	background-color: #2780e3;
+	color: #fff;
+	padding-bottom: 20px;
+	margin-bottom: 0px;
+}
+
+#footer img {
+  width: 40px;
+}
+
+#footer a.btn {
+  padding: 3px;
+}
+
+#footer h1 {
+  font-size: 23px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+
+#footer ul {
+  list-style: none;
+  font-weight: 100;
 }
