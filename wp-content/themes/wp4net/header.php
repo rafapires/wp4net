@@ -37,9 +37,9 @@
     <div id="<?php echo $post->post_name; ?>" <?php post_class('header-fixo'); ?>>
 
     <section id="header">
-      <div class="container">
 
-        <nav class="navbar navbar-inverse">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
           <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
@@ -79,9 +79,9 @@
               </ul>
             </div>
           </div>
-        </nav>
+        </div>
+      </nav>
         
 
-      </div>
     </section>
     
