@@ -4,37 +4,47 @@
  
 get_header(); ?>
 
+<?php $args_carrocel = array(
+  'order' => 'DESC',
+  'orderby' => 'meta_value_num',
+  'meta_key' => 'carrocel',
+  'post_type' => 'page',
+  'post_status' => 'publish'
+); 
+$query_carrocel = new wp_query($args_carrocel); 
+$count_carrocel = $query_carrocel->post_count;
+$pages = $query_carrocel->get_posts();
+?>
+
 <div id="carousel-wp4net-fullwidth" class="carousel slide" data-ride="carousel"> <!-- CARROCEL -->
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#carousel-wp4net-fullwidth" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-wp4net-fullwidth" data-slide-to="1"></li>
-    <li data-target="#carousel-wp4net-fullwidth" data-slide-to="2"></li>
+    <?php
+    $indicator_active = "class='active'";
+    for ($i=0; $i < $count_carrocel; $i++) { ?>
+      <li data-target="#carousel-wp4net-fullwidth" data-slide-to="<?php echo $i.'"'.$indicator_active; ?>" ></li>
+    <?php $indicator_active =''; } ?>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="http://lorempixel.com/1800/800/technics/1" alt="slide 1">
-      <div class="carousel-caption">
-        <h1>Suporte Especializado</h1>
-        <p>Phasellus ut molestie risus. Morbi interdum non felis ut dictum. Aliquam pulvinar mollis lectus, non mattis urna malesuada at. Nullam semper libero quis enim rutrum ultrices. In bibendum volutpat diam, dapibus auctor magna interdum et. Phasellus bibendum purus nec viverra sodales</p>
+    <?php $item_active=' active';
+    foreach ($pages as $page) { 
+
+      ?>
+      <div class="item<?php echo $item_active; ?>">
+        <?php echo get_the_post_thumbnail($page->ID); ?>
+        <div class="carousel-caption">
+          <h1><?php echo $page->post_title; ?></h1>
+          <p><?php if ($page->post_excerpt) { echo $page->post_excerpt;} else {echo substr(strip_tags($page->post_content),0,240);} ?></p>
+          <a href="#" class="btn btn-warning">Saiba mais</a>
+        </div>
       </div>
-    </div>
-    <div class="item">
-      <img src="http://lorempixel.com/1800/800/technics/3" alt="slide 2">
-      <div class="carousel-caption">
-        <h1>Profissionais especializados</h1>
-        <p>Phasellus ut molestie risus. Morbi interdum non felis ut dictum. Aliquam pulvinar mollis lectus, non mattis urna malesuada at. Nullam semper libero quis enim rutrum ultrices. In bibendum volutpat diam, dapibus auctor magna interdum et. Phasellus bibendum purus nec viverra sodales</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="http://lorempixel.com/1800/800/technics/9" alt="slide 2">
-      <div class="carousel-caption">
-        <h1>Gerenciamento de seu projeto</h1>
-        <p>Phasellus ut molestie risus. Morbi interdum non felis ut dictum. Aliquam pulvinar mollis lectus, non mattis urna malesuada at. Nullam semper libero quis enim rutrum ultrices. In bibendum volutpat diam, dapibus auctor magna interdum et. Phasellus bibendum purus nec viverra sodales</p>
-      </div>
-    </div>
+
+      
+    <?php 
+    $item_active=''; } ;
+    ?>
   </div>
 
   <!-- Controls -->
