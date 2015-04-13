@@ -74,3 +74,73 @@ section#footer {
 ol.carousel-indicators {
   bottom: 0px;
 }
+
+/*SEÇÕES HOME*/
+
+.scroll {
+  background: #fff;
+  position: relative;
+}
+
+.scroll .container {
+  top: 50px;
+  position: relative;
+  color: #fff;
+  background: rgba(0,0,0,0.3);
+  text-shadow: 1px 1px 3px #000;
+  font-size: x-large;
+  padding-bottom: 25px;
+}
+
+#filosofia-da-colaboratividade {
+  background-image: url('../wp4net/img/Together.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 415px;
+}
+
+#hospedagem {
+  background-image: url('../wp4net/img/dor-de-cabeca.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 490px;
+}
+
+#transparencia {
+  background-image: url('../wp4net/img/juntos.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 615px;
+}
+
+@media (max-width: 991px) {
+  #filosofia-da-colaboratividade {
+    height: 450px;
+  }
+  #hospedagem {
+    height: 525px;
+  }
+  #transparencia {
+    height: 650px;
+  }
+}
+
+#home h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: larger;
+}
+
+#home .scroll ul {
+  list-style: none;
+}
+
+#home .scroll li::before {
+  content: "\2022";
+  padding-right: 16px;
+  margin-left: -25px;
+  font-size: xx-large;
+  line-height: initial;
+}
+
+
