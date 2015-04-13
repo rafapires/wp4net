@@ -57,3 +57,20 @@ section#footer {
   list-style: none;
   font-weight: 100;
 }
+
+/*CARROCEL HOME*/
+.carousel-inner .item {
+	height: 500px;
+}
+
+.carousel-caption {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 61%, rgba(0, 0, 0, 0.0001) 100%);
+  padding: 40px;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
+ol.carousel-indicators {
+  bottom: 0px;
+}
