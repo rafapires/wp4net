@@ -29,6 +29,27 @@ body {
 	background-color: #fff;
 }
 
+div#selo_logo {
+  background: #fff;
+  width: 105px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  z-index: -100;
+}
+
+@media (max-width: 991px) {
+  div#selo_logo {
+    width: 130px;
+  }
+}
+
+@media (max-width: 249px) {
+  div#selo_logo {
+    display: none;
+  }
+}
+
 /*FOOTER*/
 
 section#footer {

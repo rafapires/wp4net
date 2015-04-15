@@ -40,6 +40,7 @@
 
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
+              <div id="selo_logo"></div>
           <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
