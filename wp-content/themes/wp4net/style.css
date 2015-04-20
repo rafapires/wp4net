@@ -113,37 +113,26 @@ ol.carousel-indicators {
   padding-bottom: 25px;
 }
 
-#filosofia-da-colaboratividade {
-  background-image: url('../wp4net/img/Together.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 415px;
+#home img.img-circle {
+  width: 125px;
 }
 
-#hospedagem {
-  background-image: url('../wp4net/img/dor-de-cabeca.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 490px;
+#home .caption {
+  text-align: center;
+  min-height: 190px;
 }
 
-#transparencia {
-  background-image: url('../wp4net/img/juntos.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 615px;
+#home .thumbnail {
+  margin-top: 20px;
+  border: none;
 }
 
-@media (max-width: 991px) {
-  #filosofia-da-colaboratividade {
-    height: 450px;
-  }
-  #hospedagem {
-    height: 525px;
-  }
-  #transparencia {
-    height: 650px;
-  }
+section {
+  background-color: #fff;
+}
+
+section#lancamento {
+  background-color: #ff7518;
 }
 
 #home h1 {
@@ -164,4 +153,8 @@ ol.carousel-indicators {
   line-height: initial;
 }
 
+/*CUSTOMIZA PLUGIN SROLL TO TOP*/
 
+.scroll-back-to-top-wrapper.show {
+  background-color: #ff7518;
+}

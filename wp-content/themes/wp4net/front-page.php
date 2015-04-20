@@ -56,57 +56,16 @@ $pages = $query_carrocel->get_posts();
     <span class="sr-only">Next</span>
   </a>
 </div> <!-- END CARROCEL -->
+<?php 
+foreach ($pages as $page) {
+?>
+  <section id='<?php echo $page->post_name;?>'>
+  <div class='container'>
+    <?php echo $page->post_content; ?>
+  </div>
+  </section>
 
-<section id="filosofia-da-colaboratividade" class="scroll">
-<div  class="container">
-    <h1>Filosofia da Colaboratividade (nossos valores)</h1>
-    <ul>
-      <li>O conhecimento de um ajuda o desenvolvimento de todos</li>
-      <li>Quanto mais colaborativo é a WP4NET mais barato fica para todos</li>
-      <li>Quanto mais colaborativo mais amplo e rápido é o FLUXO de conhecimento garantindo eficiência, agilidade e OPORTUNIDADES INOVADORAS</li>
-    </ul>
-    <div class="col-sm-4 col-sm-offset-4">
-      <a href="#" class="btn btn-default btn-lg center-block">Mais informações</a>
-    </div>
-</div>
-</section>
-<section id="hospedagem" class="scroll">
-<div class="container" >
-    <h1>Hospedagem só para WordPress</h1>
-    <p class="label label-warning">
-      Chega de dor de cabeça
-    </p>
-    <ul>
-      <li>Configuração do servidor 100% compatível com as diretrizes do WordPress</li>
-      <li>Mais segurança e velocidade</li>
-      <li>Maior compatibilidade com plugins</li>
-      <li>Backups Diários e atualizações constantes garantem segurança e a utilização do que há de mais novo no WordPress</li>
-    </ul>
-    <div class="col-sm-4 col-sm-offset-4">
-      <a href="#" class="btn btn-default btn-lg center-block">Mais informações</a>
-    </div>
-</div>
-</section>
-<section id="transparencia" class="scroll">
-<div class="container">
-    <h1>Transparência</h1>
-    <ul>
-      <li>Gestão</li>
-      <ul>
-        <li>Demonstrativo do plano de ação</li>
-        <li>Chamada de associados para tomada de decisões e prioridade de ações</li>
-        <li>Livre participação de associados em comitês de interesse</li>
-      </ul>
-      <li>Financeiro</li>
-      <ul>
-        <li>Transparência total dos custos</li>
-        <li>Participação livre de associados na análise e auditoria</li>
-        <li>Definição de preços pelo plano de ação de gestão, quanto mais colaborativo mais justo</li>
-      </ul>
-    </ul>
-    <div class="col-sm-4 col-sm-offset-4">
-      <a href="#" class="btn btn-default btn-lg center-block">Mais informações</a>
-    </div>
-</div>
-</section>
+<?php 
+}
+?>
 <?php get_footer(); ?>
