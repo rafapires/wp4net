@@ -131,6 +131,10 @@ section {
   background-color: #fff;
 }
 
+#home section {
+  padding-top: 50px;
+}
+
 section#lancamento {
   background-color: #ff7518;
 }
@@ -140,6 +144,68 @@ section#lancamento {
   font-weight: bold;
   font-size: larger;
 }
+
+.frm_forms {
+  margin-top: 21px;
+}
+
+#home .frm_form_fields.form-group {
+  margin-left: 15px;
+}
+
+#lancamento .well {
+  margin-top: 21px;
+  min-height: 495px;
+  text-align: center;
+  font-size: xx-large;
+}
+
+#lancamento h1 {
+  font-size: xx-large;
+  padding: 25px;
+  margin: 0px;
+}
+
+#home #lancamento .well p {
+  margin: 3px;
+}
+
+#lancamento span.label.label-danger {
+  text-decoration: line-through;
+}
+
+#lancamento .label-success {
+  font-size: xx-large;
+  position: relative;
+  top: 15px;
+}
+
+#lancamento .control-label {
+  font-weight: inherit;
+  font-size: larger;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  padding-top: 0px;
+  text-align: left;
+}
+
+#lancamento .checkbox {
+  font-size: large;
+  text-align: center;
+  padding: 0px;
+  margin-bottom: -15px;
+}
+
+
+
+#lancamento p.bg-warning.disabled {
+  font-size: initial;
+  padding: 10px;
+  position: relative;
+  top: 50px;
+  background-color: rgba(255, 117, 24, 0.5);
+}
+
 
 #home .scroll ul {
   list-style: none;
@@ -152,6 +218,41 @@ section#lancamento {
   font-size: xx-large;
   line-height: initial;
 }
+
+section#missao-visao-valores {
+  height: 450px;
+  font-size: xx-large;
+}
+
+#home .tab-content {
+  padding: 0px 100px;
+}
+
+#missao h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#home .nav-tabs li {
+  left: 31%;
+}
+
+#visao h1 {
+  text-align: center;
+  font-size: larger;
+  text-transform: none;
+  font-weight: initial;
+  margin-top: 40px;
+}
+
+#valores h1 {
+  font-weight: normal;
+  text-transform: none;
+  font-size: inherit;
+  margin-top: 40px;
+}
+
+
 
 /*CUSTOMIZA PLUGIN SROLL TO TOP*/
 

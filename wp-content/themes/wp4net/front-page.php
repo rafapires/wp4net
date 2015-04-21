@@ -61,7 +61,7 @@ foreach ($pages as $page) {
 ?>
   <section id='<?php echo $page->post_name;?>'>
   <div class='container'>
-    <?php echo $page->post_content; ?>
+    <?php echo apply_filters('the_content', $page->post_content);?>
   </div>
   </section>
 
