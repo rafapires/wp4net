@@ -233,9 +233,6 @@ section#missao-visao-valores {
   margin-top: 100px;
 }
 
-#home .nav-tabs li {
-  left: 31%;
-}
 
 #visao h1 {
   text-align: center;
@@ -252,7 +249,14 @@ section#missao-visao-valores {
   margin-top: 40px;
 }
 
+#missao-visao-valores .nav-tabs > li {
+  float: none;
+  display: inline-block;
+}
 
+section#missao-visao-valores .nav-tabs {
+  text-align: center;
+}
 
 /*CUSTOMIZA PLUGIN SROLL TO TOP*/
 
