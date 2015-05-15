@@ -228,13 +228,13 @@ section#missao-visao-valores {
   padding: 0px 100px;
 }
 
-#missao h1 {
+#tab_missao h1 {
   text-align: center;
   margin-top: 100px;
 }
 
 
-#visao h1 {
+#tab_visao h1 {
   text-align: center;
   font-size: larger;
   text-transform: none;
@@ -242,7 +242,7 @@ section#missao-visao-valores {
   margin-top: 40px;
 }
 
-#valores h1 {
+#tab_valores h1 {
   font-weight: normal;
   text-transform: none;
   font-size: inherit;
