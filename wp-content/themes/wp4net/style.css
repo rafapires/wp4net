@@ -79,6 +79,15 @@ section#footer {
   font-weight: 100;
 }
 
+#footer a {
+  color: #fff;
+}
+
+#footer a:hover,
+#footer a:visited {
+  text-decoration: none;
+}
+
 /*CARROCEL HOME*/
 .carousel-inner .item {
 	height: 500px;

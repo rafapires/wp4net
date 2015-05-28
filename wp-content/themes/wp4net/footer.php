@@ -1,6 +1,6 @@
 	<section id="footer">
 		<div class="container">
-			<div class="row footer-nav">
+<!-- 			<div class="row footer-nav">
 				<div class="col-sm-4">
 					<h1>Produtos</h1>
 					<ul>
@@ -30,8 +30,8 @@
 					</ul>
 				</div>
 			</div>
-			<hr />
-			<div class="btn-group pull-left">
+ -->			<hr />
+			<!-- <div class="btn-group pull-left">
 				<a href="#" class="btn"><img src="<?php echo get_stylesheet_directory_uri().'/img/Wordpress-128.png'; ?> "></a>
 				<a href="#" class="btn"><img src="<?php echo get_stylesheet_directory_uri().'/img/Mail-128.png'; ?> "></a>
 				<a href="#" class="btn"><img src="<?php echo get_stylesheet_directory_uri().'/img/Facebook-128.png'; ?> "></a>
@@ -39,9 +39,9 @@
 				<a href="#" class="btn"><img src="<?php echo get_stylesheet_directory_uri().'/img/LinkedIn-128.png'; ?> "></a>
 				<a href="#" class="btn"><img src="<?php echo get_stylesheet_directory_uri().'/img/YouTube-128.png'; ?> "></a>
 				<a href="#" class="btn"><img src="<?php echo get_stylesheet_directory_uri().'/img/RSS-128.png'; ?> "></a>
-			</div>
+			</div> -->
 			<span class="pull-right">
-				<p>© 2015 - Rafael D´Alessandro Pires</p>
+				<p>© 2015 - <a href="mailto:rafael.pires.sp@gmail.com">Rafael D´Alessandro Pires</a></p>
 			</span>
 		</div>
 
