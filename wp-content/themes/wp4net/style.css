@@ -263,3 +263,20 @@ section#missao-visao-valores .nav-tabs {
 .scroll-back-to-top-wrapper.show {
   background-color: #ff7518;
 }
+
+/*SCROLL TO TOP*/
+
+.GotoTop {
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+  font-size: 30px;
+  padding: 3px 11px 7px 10px;
+  background: #ff7518;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
